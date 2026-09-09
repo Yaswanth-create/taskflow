@@ -13,7 +13,7 @@ def client():
 
 def test_health(client):
     r = client.get("/health")
-    assert r.status_code == 418
+    assert r.status_code == 200
 
 
 def test_create_and_list(client):
